@@ -1,0 +1,59 @@
+---
+title: "Sandbox — Test Your AI"
+sidebarTitle: "Sandbox"
+description: "Cendra's Sandbox is a testing environment where you can send messages to your AI agent with mock reservation data before deploying to live guests. Same pipeline as production."
+---
+
+Cendra's Sandbox is a testing environment where you can send messages to your AI agent with mock reservation data before deploying to live guests. The Sandbox uses the exact same AI pipeline as production — what you see in testing is what guests will experience.
+
+## Why Test in the Sandbox
+
+- **Verify accuracy** — confirm the AI answers common questions correctly using your property data
+- **Test guardrails** — make sure AI Rules prevent unwanted responses
+- **Check escalations** — verify that escalation rules trigger when they should
+- **Tune tone** — confirm the AI's communication style matches your brand
+- **Build confidence** — feel comfortable before switching to autopilot
+
+## Mock Reservation Setup
+
+Configure a test reservation to simulate different guest scenarios:
+
+| Setting | Options |
+|---------|---------|
+| **Property** | Select from your synced properties |
+| **Check-in date/time** | Any date — test pre-arrival, during-stay, and post-stay scenarios |
+| **Check-out date/time** | Any date |
+| **Reservation status** | Inquiry, Follow-up, Confirmed, Arriving, Check-in today, Currently hosting, Check-out today, Post-stay, Expired |
+| **Booking channel** | Airbnb, Booking.com, Direct, Other |
+| **Guest count** | Adults and children |
+| **Payment status** | Paid or unpaid (affects payment reminder behavior) |
+| **Message date/time** | When the test message was "sent" (affects time-sensitive responses) |
+
+## How to Test
+
+1. Navigate to **Agent Hub → Test Agent**
+2. Select a property and configure the mock reservation
+3. Type a message in the chat input
+4. Review the AI's response
+5. Adjust knowledge, rules, or agent settings as needed
+6. Repeat until you're satisfied
+
+## Recommended Test Scenarios
+
+| Test | What to verify |
+|------|---------------|
+| "What time is check-in?" | Correct property-specific check-in time |
+| "What's the WiFi password?" | Retrieves from knowledge base |
+| "Can I bring my dog?" | References pet policy |
+| "I want a refund" | Escalation triggers (if configured) |
+| "Where's the nearest grocery store?" | Local recommendations from knowledge base |
+| Message in Spanish/French | Language matching works correctly |
+| "The shower is broken" | Maintenance escalation triggers |
+| "Can I check in at 10am?" | Early check-in upsell or escalation per your rules |
+
+## Sandbox Limitations
+
+- Messages are not sent to real guests
+- No actual PMS data is modified
+- Upsell offers are simulated but not charged
+- The Sandbox does not connect to WhatsApp or email — it's a standalone chat interface
