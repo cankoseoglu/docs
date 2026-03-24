@@ -1,0 +1,60 @@
+---
+title: "Roles & Permissions"
+sidebarTitle: "Roles & Permissions"
+description: "Cendra's role-based access control (RBAC) system lets you create custom roles with granular permissions across 14 resources and 4 actions. Control who can view, edit, create, and delete across messages, agents, properties, and more."
+---
+
+Cendra's role-based access control (RBAC) system lets you create custom roles with granular permissions. Control exactly who on your team can access which features and perform which actions.
+
+## How Permissions Work
+
+Permissions follow the format `resource:action`. Each role defines which resource-action combinations are allowed.
+
+## Resources
+
+| Resource | What it controls |
+|----------|-----------------|
+| **message** | Inbox conversations and guest messages |
+| **agent** | AI agent configuration and management |
+| **knowledgebase** | Knowledge base articles and content |
+| **label** | Labels and condition rules |
+| **sandbox** | Sandbox testing environment |
+| **workspace** | Workspace settings and configuration |
+| **workspaceuser** | Team member management |
+| **property** | Property details and configuration |
+| **booking** | Reservation data and management |
+| **task** | Issues and task management |
+| **upsell** | Upsell campaigns and tracking |
+| **notification** | Notification preferences |
+| **user** | User profile management |
+| **role** | Role creation and permission editing |
+
+## Actions
+
+| Action | Description |
+|--------|-------------|
+| **view** | Read-only access |
+| **edit** | Modify existing items |
+| **create** | Create new items |
+| **delete** | Remove items |
+
+## Creating Custom Roles
+
+1. Navigate to **Settings → Workspace → Roles**
+2. Click **Create Role**
+3. Name the role (e.g., "Property Manager", "Guest Support", "Admin")
+4. Toggle permissions on/off for each resource-action combination
+5. Save the role
+
+## Example Roles
+
+| Role | Permissions |
+|------|------------|
+| **Admin** | Full access to everything |
+| **Property Manager** | View/edit properties, bookings, messages. No access to workspace settings or billing. |
+| **Guest Support** | View/edit messages, view properties and bookings. No agent configuration. |
+| **Viewer** | View-only access to messages, properties, and dashboard |
+
+## Property-Level Access
+
+Beyond role-based permissions, you can restrict team members to specific properties. A team member with "Guest Support" role restricted to 3 properties will only see messages and bookings for those properties.

@@ -1,0 +1,37 @@
+---
+title: "Stripe Integration"
+sidebarTitle: "Stripe"
+description: "Cendra integrates with Stripe for subscription billing and upsell payment collection. Accept guest payments for early check-in, late checkout, and add-on services through secure Stripe checkout."
+---
+
+Cendra integrates with Stripe for subscription billing and upsell payment collection. When guests accept an upsell offer (early check-in, late checkout, or add-on services), payment is collected through a secure Stripe checkout session.
+
+## What Stripe Powers in Cendra
+
+| Feature | How Stripe is used |
+|---------|-------------------|
+| **Subscription billing** | Monthly/annual Cendra subscription payments |
+| **Upsell payments** | Guest payments for early check-in, late checkout, extras |
+| **Payment links** | Shareable payment links for custom charges |
+| **Invoicing** | Automatic invoice generation and delivery |
+
+## Upsell Payment Flow
+
+1. Cendra's AI sends an upsell offer to the guest via WhatsApp or email
+2. Guest clicks the payment link
+3. Stripe checkout collects payment securely
+4. Cendra receives a webhook confirmation
+5. The upsell is marked as confirmed
+6. AI can reference the confirmed upsell in future conversations
+
+## Payment Statuses
+
+| Status | Description |
+|--------|-------------|
+| **Pending** | Payment link sent, awaiting guest action |
+| **Completed** | Payment collected successfully |
+| **Expired** | Payment link expired without action |
+
+## Setup
+
+Connect your Stripe account in **Settings → Payments**. Cendra uses Stripe Connect to link your account securely.

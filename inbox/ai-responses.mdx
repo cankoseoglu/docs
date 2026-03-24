@@ -1,0 +1,48 @@
+---
+title: "AI-Powered Responses"
+sidebarTitle: "AI Responses"
+description: "Cendra's AI generates contextual responses for every guest message using reservation data, property knowledge, and your configured rules. Responses are grounded in your data — no hallucination."
+---
+
+Cendra's AI generates contextual responses for every guest message using reservation data from your PMS, property knowledge from your knowledge base, and behavioral rules from your AI configuration. Every response is grounded in your data — Cendra does not hallucinate information.
+
+## How AI Responses Are Generated
+
+For every incoming guest message, Cendra's AI:
+
+1. **Identifies the guest** — matches to a reservation via phone number or email
+2. **Retrieves context** — pulls property details, house rules, amenities, and past conversation history
+3. **Checks rules** — applies AI Rules, escalation conditions, and label restrictions
+4. **Generates response** — composes a reply using your knowledge, tone, and style
+5. **Routes appropriately** — sends automatically (autopilot), queues for review (semi-auto), or suggests (manual)
+
+## Response Quality Controls
+
+| Control | How it works |
+|---------|-------------|
+| **Knowledge base** | AI only references information you've provided — no external assumptions |
+| **AI Rules** | Guardrails prevent unwanted responses (no financial commitments, no refund promises) |
+| **Tone settings** | Responses match your configured communication style |
+| **Language matching** | AI responds in the guest's language by default |
+| **Escalation rules** | Complex or sensitive topics are routed to humans |
+
+## Teaching the AI
+
+When the AI generates an incorrect or suboptimal response:
+
+1. **Edit the response** directly in the inbox before sending
+2. **The AI learns** from your edit and adjusts for similar future questions
+3. **Add missing knowledge** if the AI didn't have the information it needed
+4. **Set a new rule** if the AI's behavior needs a persistent change
+
+No prompt engineering required. Correct the AI the same way you'd coach a team member.
+
+## Response Modes
+
+| Mode | Behavior | Control level |
+|------|----------|--------------|
+| **Autopilot** | AI sends responses automatically | Low oversight, high efficiency |
+| **Semi-automated** | AI drafts responses, you approve before sending | Medium oversight |
+| **Manual** | AI suggests responses, you edit and send | Full oversight |
+
+You can change modes per agent, per property, and at any time.

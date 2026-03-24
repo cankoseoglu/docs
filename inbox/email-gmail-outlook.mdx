@@ -1,0 +1,40 @@
+---
+title: "Email — Gmail & Outlook"
+sidebarTitle: "Email (Gmail & Outlook)"
+description: "Connect Gmail or Outlook to Cendra via OAuth to receive and respond to guest emails from your unified inbox. AI agents read, draft, and send email responses using your business email address."
+---
+
+Cendra connects to Gmail and Outlook via OAuth to bring guest emails into your unified inbox. AI agents read incoming emails, generate responses using your property data, and send replies from your business email address.
+
+## Supported Email Providers
+
+| Provider | Authentication | Features |
+|----------|---------------|----------|
+| **Gmail** | Google OAuth | Real-time push notifications via Pub/Sub, auto-sync |
+| **Outlook** | Microsoft OAuth | Real-time change notifications via Graph API, auto-sync |
+| **Custom (IMAP)** | IMAP credentials | Manual server configuration for any email provider |
+
+## How It Works
+
+1. Navigate to **Settings → Email**
+2. Click **Add Email Account**
+3. Select Gmail, Outlook, or IMAP
+4. Authenticate via OAuth (Gmail/Outlook) or enter server details (IMAP)
+5. Cendra begins syncing emails immediately
+
+## What Happens When a Guest Emails
+
+1. Email arrives at your business inbox
+2. Cendra receives the email in real-time (Gmail Pub/Sub or Outlook Graph notifications)
+3. Email appears in your unified inbox alongside WhatsApp messages
+4. AI processes the email and generates a response
+5. Based on your automation level, the response is sent automatically or queued for review
+6. Reply is sent from your business email address — the guest sees your email, not Cendra's
+
+## Multiple Email Accounts
+
+Connect multiple email accounts to a single workspace. Each account appears in the unified inbox with a label showing which address received the message.
+
+## Email + WhatsApp Together
+
+Cendra shows all guest communication in one thread — even if the guest contacted you via email and WhatsApp. This gives your AI agent full context for every response, regardless of channel.
