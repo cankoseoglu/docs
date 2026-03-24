@@ -1,0 +1,46 @@
+---
+title: "Test in Sandbox"
+sidebarTitle: "Test in Sandbox"
+description: "Test your Cendra AI agent in a sandbox environment before deploying to live guests. Send test messages, verify responses, and build confidence with mock reservations."
+---
+
+Cendra's Sandbox lets you test your AI agent before it handles live guest conversations. Send test messages with mock reservation data and verify the AI responds correctly using your property knowledge, guardrails, and escalation rules.
+
+## What the Sandbox Does
+
+- **Simulates real conversations** — send messages as if you were a guest
+- **Uses your actual AI agent** — same pipeline, knowledge base, and rules as production
+- **Mock reservation context** — configure check-in dates, property, guest count, and booking status
+- **Instant feedback** — see how the AI responds and why
+
+## How to Use the Sandbox
+
+1. Navigate to **Agent Hub → Test Agent**
+2. Select a **property** from the dropdown
+3. Configure the **mock reservation**:
+   - Check-in and check-out dates
+   - Reservation status (inquiry, confirmed, arriving, hosting, etc.)
+   - Booking channel (Airbnb, Booking.com, direct)
+   - Guest count (adults and children)
+   - Payment status (paid or unpaid)
+4. **Type a test message** — ask about check-in, WiFi, amenities, or anything a guest would ask
+5. **Review the AI response** — verify accuracy, tone, and completeness
+
+## What to Test
+
+| Scenario | What to verify |
+|----------|---------------|
+| "What time is check-in?" | AI references correct property check-in time |
+| "What's the WiFi password?" | AI retrieves from knowledge base |
+| "Can I check in early?" | AI follows your early check-in procedure or escalation rule |
+| "I want to cancel" | AI escalates per your guardrails (if configured) |
+| "Where can I park?" | AI uses property parking instructions |
+| Send a message in Spanish | AI responds in the guest's language (if language matching is enabled) |
+
+## Sandbox vs Production
+
+The Sandbox uses the exact same AI pipeline as production. The only difference is that messages are not sent to real guests. What you see in the Sandbox is what guests will experience.
+
+<Card title="Next: Go Live" icon="arrow-right" href="/getting-started/go-live">
+  Deploy your AI agent to start handling live guest conversations.
+</Card>
