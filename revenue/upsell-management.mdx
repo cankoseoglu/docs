@@ -1,0 +1,52 @@
+---
+title: "Upsell Management"
+sidebarTitle: "Upsell Management"
+description: "Cendra's upsell system automatically offers guests extras like early check-in, late checkout, airport transfers, and add-on services via WhatsApp and email. Multiple pricing models and delivery channels."
+---
+
+Cendra's upsell system automatically offers guests extras like early check-in, late checkout, airport transfers, and add-on services via WhatsApp and email. Upsells are delivered at the right moment in the guest journey — generating additional revenue without manual effort.
+
+## How Upsells Work
+
+1. **Create an upsell offer** — define the service, pricing, and delivery method
+2. **Set targeting rules** — choose which properties, days, and reservation stages trigger the offer
+3. **Cendra delivers automatically** — AI sends the offer via WhatsApp or email at the configured time
+4. **Guest accepts or declines** — payment is collected through Stripe if the guest accepts
+5. **Track performance** — monitor acceptance rates, revenue, and trends in the Upsell Tracker
+
+## Upsell Types
+
+| Type | Example | How it works |
+|------|---------|-------------|
+| **Early check-in** | "Check in at 10am for $30" | Offered before arrival |
+| **Late checkout** | "Check out at 2pm for $25" | Offered during stay |
+| **Gap upsell** | Services offered between reservations | Targets available gaps in calendar |
+| **Add-on service** | Airport transfer, grocery delivery, spa | Offered pre-arrival or during stay |
+
+## Pricing Models
+
+| Model | Description |
+|-------|-------------|
+| **Fixed price** | Set amount per upsell (e.g., $30 for early check-in) |
+| **Hourly** | Per-hour pricing (e.g., $15/hour for early check-in) |
+| **Percentage** | Percentage of nightly rate |
+| **Gap percentage** | Percentage-based pricing for calendar gap offers |
+
+## Configuration Options
+
+| Setting | Description |
+|---------|-------------|
+| **Target properties** | Specific properties or all |
+| **Days of week** | Which days the offer is active |
+| **Advance notice** | Minimum time before check-in to send offer |
+| **Min/max night triggers** | Offer based on reservation length |
+| **Delivery method** | WhatsApp, email, or both |
+| **Payment collection** | Pre-payment via Stripe or pay on arrival |
+
+## Upsell Tracker
+
+The Upsell Tracker dashboard provides:
+- **KPI cards** — total revenue, acceptance rate, active offers
+- **Performance charts** — revenue trends over time
+- **Per-offer metrics** — which upsells perform best
+- **Property breakdown** — revenue by property
