@@ -40,16 +40,77 @@
             ]
           },
           {
+            "group": "Getting Started",
+            "pages": [
+              "getting-started/create-workspace",
+              "getting-started/connect-pms",
+              "getting-started/connect-channels",
+              "getting-started/test-in-sandbox",
+              "getting-started/go-live"
+            ]
+          },
+          {
             "group": "AI Agents",
             "pages": [
-              "ai-agents/how-agents-work"
+              "ai-agents/how-agents-work",
+              "ai-agents/agent-hub",
+              "ai-agents/ai-rules",
+              "ai-agents/escalations",
+              "ai-agents/tags",
+              "ai-agents/labels",
+              "ai-agents/knowledge-base",
+              "ai-agents/sandbox"
             ]
           },
           {
             "group": "Inbox & Communication",
             "pages": [
               "inbox/unified-inbox",
-              "inbox/whatsapp-business"
+              "inbox/whatsapp-business",
+              "inbox/email-gmail-outlook",
+              "inbox/ai-responses"
+            ]
+          },
+          {
+            "group": "Smart Locks & IoT",
+            "pages": [
+              "smart-locks/overview",
+              "smart-locks/guest-access-codes"
+            ]
+          },
+          {
+            "group": "Property Management",
+            "pages": [
+              "properties/properties-listings",
+              "properties/availability-booking-rules",
+              "properties/pricing-fees"
+            ]
+          },
+          {
+            "group": "Revenue & Upsells",
+            "pages": [
+              "revenue/upsell-management",
+              "revenue/pricing-models"
+            ]
+          },
+          {
+            "group": "Dashboard & Analytics",
+            "pages": [
+              "dashboard/overview"
+            ]
+          },
+          {
+            "group": "Contacts",
+            "pages": [
+              "contacts/contact-management"
+            ]
+          },
+          {
+            "group": "Workspace & Team",
+            "pages": [
+              "workspace/workspace-settings",
+              "workspace/roles-permissions",
+              "workspace/billing"
             ]
           }
         ]
@@ -66,6 +127,15 @@
               "integrations/lodgify",
               "integrations/cloudbeds",
               "integrations/ownerrez"
+            ]
+          },
+          {
+            "group": "Other Integrations",
+            "pages": [
+              "integrations/stripe",
+              "integrations/slack",
+              "integrations/google-calendar",
+              "integrations/direct-booking"
             ]
           }
         ]
