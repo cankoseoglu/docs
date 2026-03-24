@@ -1,0 +1,71 @@
+---
+title: "How Cendra AI Agents Work"
+sidebarTitle: "How AI Agents Work"
+description: "Cendra AI agents are configurable, property-aware chatbots that handle guest communication autonomously across WhatsApp and email. Each agent is trained on your property's knowledge base and follows guardrails you define."
+---
+
+Cendra AI agents are configurable, property-aware chatbots that handle guest communication autonomously. Each agent is trained on your property's knowledge base — amenities, house rules, check-in procedures, local recommendations — and follows guardrails you define for tone, escalation rules, and restricted topics.
+
+## Key Capabilities
+
+- **Respond to guest inquiries 24/7** across WhatsApp Business, Gmail, and Outlook
+- **Access live reservation data** from your PMS — check-in dates, property details, guest history
+- **Follow custom procedures** for scenarios like early check-in requests, maintenance issues, or lost key situations
+- **Escalate to human operators** based on configurable rules — sentiment thresholds, topic restrictions, price limits
+- **Learn from corrections** — edit an AI response in the inbox and the agent adapts its behavior
+
+## The Response Pipeline
+
+When a guest message arrives, Cendra's AI processes it through five stages:
+
+### 1. Guest Identification
+Cendra matches the incoming message to a reservation using the guest's phone number (WhatsApp) or email address. This pulls in check-in dates, property details, guest count, and booking status from your PMS.
+
+### 2. Context Retrieval
+The AI searches your property's knowledge base for information relevant to the guest's question. If a guest asks about parking, the AI retrieves your parking instructions. If they ask about restaurants, it pulls your local recommendations.
+
+### 3. Guardrail Check
+Before generating a response, Cendra checks your configured guardrails:
+- **Tone rules** — formal, casual, or match-the-guest style
+- **Topic restrictions** — topics the AI should never handle (e.g., refund requests, complaints)
+- **Escalation triggers** — conditions that require human review (e.g., negative sentiment, requests above a price threshold)
+
+### 4. Response Generation
+The AI composes a response using the guest's context, relevant knowledge, and your communication style. The response is grounded in your data — Cendra doesn't hallucinate information it doesn't have.
+
+### 5. Delivery Routing
+Based on your automation level, the response is either:
+- **Sent automatically** (Autopilot mode)
+- **Queued for review** (Semi-automated mode)
+- **Shown as a suggestion** (Manual mode)
+
+## Agent Configuration
+
+Each AI agent in Cendra is configured through the Agent Hub with these components:
+
+| Component | What it controls |
+|-----------|-----------------|
+| **Knowledge Base** | Property information the AI can reference — amenities, rules, procedures, FAQs |
+| **Guardrails** | Safety boundaries — what the AI can and cannot do, tone, restricted topics |
+| **Escalation Rules** | When to hand off to a human — sentiment, topic, time-based, or threshold triggers |
+| **Labels** | Conditional routing — tag conversations for follow-up, prioritization, or team assignment |
+| **Tools** | Actions the AI can take — look up availability, send upsell offers, create tasks |
+
+## Training Your AI
+
+Cendra AI agents learn in two ways:
+
+### From Your PMS Data
+When you connect your property management system, Cendra automatically builds a knowledge base from your property details, descriptions, amenities, and booking rules. This gives the AI a strong foundation without any manual work.
+
+### From Your Corrections
+When the AI gets something wrong, you edit the response directly in the inbox. Cendra learns from these corrections:
+- **Edit a response** → AI adjusts its behavior for similar questions
+- **Add knowledge** → AI gains new information to reference
+- **Set a guardrail** → AI avoids the mistake in future conversations
+
+No prompt engineering required. Teach your AI the same way you'd onboard a new team member — through feedback and example.
+
+## Sandbox Testing
+
+Before deploying an AI agent to live guest conversations, test it in Cendra's Sandbox environment. Send test messages, verify responses, and build confidence that the AI handles your common scenarios correctly. The Sandbox uses the same pipeline as production — what you see in testing is what guests will experience.
