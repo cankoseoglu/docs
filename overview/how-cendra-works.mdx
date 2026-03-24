@@ -1,0 +1,72 @@
+---
+title: "How Cendra Works"
+sidebarTitle: "How Cendra Works"
+description: "Cendra connects to your property management system, syncs reservation and property data, and deploys AI agents that handle guest communication across WhatsApp Business, Gmail, and Outlook automatically."
+---
+
+Cendra connects to your property management system, syncs reservation and property data, and deploys AI agents that handle guest communication across WhatsApp Business, Gmail, and Outlook automatically.
+
+## The Cendra Pipeline
+
+When a guest sends a message, Cendra's AI processes it through a multi-stage pipeline:
+
+1. **Identify the guest** — Cendra matches the incoming message to a reservation using phone number or email, pulling check-in dates, property details, and guest history from your PMS
+2. **Retrieve context** — The AI checks your property's knowledge base for relevant information: house rules, amenities, WiFi details, local recommendations, check-in procedures
+3. **Apply guardrails** — Before generating a response, Cendra checks your configured rules: tone of voice, topics the AI should not handle, price thresholds that require human approval
+4. **Generate response** — The AI composes a response using the guest's context, your knowledge base, and your communication style
+5. **Route for delivery** — Based on your automation level, the response is either sent automatically, queued for human review, or flagged as an escalation
+
+## Automation Levels
+
+Cendra supports progressive automation — start with human oversight and increase automation as you build confidence:
+
+| Level | What happens | Best for |
+|-------|-------------|----------|
+| **Manual** | AI suggests responses, human sends | New users learning the system |
+| **Semi-automated** | AI sends routine messages, flags complex ones | Teams building confidence |
+| **Autopilot** | AI handles everything, escalates edge cases | Experienced operators |
+
+You control automation per agent, per property, and per message type. A single property can have autopilot for check-in instructions but manual mode for complaint handling.
+
+## What Syncs From Your PMS
+
+Cendra maintains a real-time sync with your property management system:
+
+| Data type | Examples | How it's used |
+|-----------|----------|---------------|
+| **Properties** | Name, address, amenities, photos | AI references accurate property details in responses |
+| **Reservations** | Check-in/out dates, guest count, status | AI knows who's arriving when and personalizes messages |
+| **Guest profiles** | Name, email, phone, language | AI addresses guests by name and communicates in their language |
+| **Pricing** | Nightly rates, fees, discounts | AI can answer pricing questions accurately |
+| **Availability** | Calendar, booking rules, restrictions | AI handles availability inquiries without manual lookup |
+| **Booking rules** | Min/max stay, advance notice, prep time | AI applies your rules when discussing bookings |
+
+## Communication Channels
+
+Cendra supports three communication channels today:
+
+- **WhatsApp Business** — The most popular channel for guest communication in hospitality. Cendra connects via the WhatsApp Business API for two-way messaging with guests.
+- **Gmail** — Connect your Gmail account via OAuth. Cendra reads incoming guest emails and responds from your business email address.
+- **Outlook** — Connect your Outlook/Microsoft 365 account via OAuth. Same functionality as Gmail integration.
+
+All channels feed into Cendra's [unified inbox](/inbox/unified-inbox), where you can see every conversation across every channel in one view.
+
+## Knowledge Base
+
+Cendra's AI agents are only as good as the knowledge they have. The knowledge base is where you store everything your AI needs to answer guest questions:
+
+- **Property details** — Automatically synced from your PMS (amenities, descriptions, location)
+- **House rules** — Check-in/out times, noise policies, pet policies, parking instructions
+- **Local recommendations** — Restaurants, attractions, transportation, emergency contacts
+- **Custom procedures** — How to handle early check-in requests, maintenance issues, lost key situations
+- **FAQs** — Common questions and your preferred answers
+
+The knowledge base is organized per property, so each AI agent has property-specific context. You can edit, add, and remove knowledge at any time — changes take effect immediately.
+
+## What Makes Cendra Different
+
+- **Property-aware AI** — Unlike generic chatbots, Cendra's agents have real-time access to reservation data, property details, and guest history from your PMS
+- **Human-in-the-loop** — Full visibility into every AI decision. Edit, approve, or override any response through the copilot interface
+- **Multi-channel** — One platform for WhatsApp, Gmail, and Outlook instead of managing each channel separately
+- **45+ PMS integrations** — Works with Guesty, Hostaway, Lodgify, Cloudbeds, OwnerRez, Beds24, and [40+ more](/integrations/overview)
+- **Teachable** — Correct the AI in the inbox and it learns from your edits. No prompt engineering required
