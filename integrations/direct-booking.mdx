@@ -1,55 +1,96 @@
 ---
-title: "Direct Booking Site"
+title: "Direct Booking via AI Agents"
 sidebarTitle: "Direct Booking"
-description: "Cendra is planning a customizable direct booking site where guests can book properties directly — bypassing OTA commissions. Vote on this feature to help us prioritize."
+description: "Cendra AI agents will soon accept direct bookings from WhatsApp, Instagram, Facebook Messenger, Telegram, Line, WeChat, and more — creating payment links, collecting payments, updating calendars, and syncing with your PMS to avoid double bookings."
 ---
 
 <Note>
-**Planned Feature** — Direct Booking Site is not yet available in Cendra. We're considering building it based on customer demand. If this feature would be valuable for your business, let us know by voting below.
+**Coming Soon** — Direct booking via AI agents is currently in development. Core features are being rolled out progressively. Vote below to help us prioritize.
 </Note>
 
 ## The Vision
 
-A customizable direct booking site where guests can book your properties directly — bypassing OTA commissions from Airbnb, Booking.com, and other platforms. Drive direct bookings and keep more revenue.
+Cendra's AI agents won't just answer guest questions — they'll accept bookings directly from any communication channel. A guest messages you on WhatsApp asking about availability, and the AI checks your calendar, offers a price, creates a payment link, collects payment, confirms the reservation, and syncs it to your PMS — all without human intervention.
 
-## What We're Considering
+No OTA commissions. No manual booking process. No double bookings.
 
-| Feature | Description |
-|---------|-------------|
-| **Custom domain** | Use your own domain (e.g., book.yourcompany.com) |
-| **Logo & branding** | Brand the booking site with your identity |
-| **Hero content** | Customize the main banner and messaging |
-| **SEO settings** | Page title, meta description for search visibility |
-| **Social links** | Connect social media accounts |
-| **FAQs** | Add frequently asked questions to the booking page |
+## How It Will Work
 
-## Booking Configuration (Planned)
+```
+Guest messages on WhatsApp / Instagram / Messenger
+         ↓
+AI checks availability in your PMS calendar
+         ↓
+AI offers price and booking details
+         ↓
+Guest confirms → AI creates a Stripe payment link
+         ↓
+Guest pays → AI confirms the reservation
+         ↓
+AI syncs booking to your PMS calendar
+         ↓
+Calendar blocked → no double bookings
+```
 
-| Setting | Description |
-|---------|-------------|
-| **Deposit policies** | Configure deposit requirements for direct bookings |
-| **Check-in rules** | Set check-in/out times and restrictions |
-| **Payment methods** | Accept payments via Stripe |
-| **Booking rules** | Minimum stay, advance notice, availability windows |
+## Supported Communication Channels (Planned)
 
-## Why Direct Bookings Matter
+Cendra is building direct booking capabilities across all major messaging platforms:
 
-| Channel | Typical commission |
-|---------|-------------------|
-| Airbnb | 3-15% host fee |
-| Booking.com | 15-20% commission |
-| Vrbo | 5-8% host fee |
-| **Direct** | **0% commission** |
+| Channel | Status | Description |
+|---------|--------|-------------|
+| **WhatsApp Business** | Coming soon | Accept bookings via WhatsApp conversation |
+| **Instagram DMs** | Coming soon | Book directly from Instagram inquiries |
+| **Facebook Messenger** | Coming soon | Convert Messenger inquiries into bookings |
+| **Telegram** | Planned | Accept bookings via Telegram chat |
+| **Line** | Planned | Popular in Asia-Pacific markets |
+| **WeChat** | Planned | Essential for Chinese travelers |
+| **Email** | Planned | Convert email inquiries into confirmed bookings |
 
-## How It Would Work With AI Agents
+## What the AI Will Handle
 
-When a guest inquires via your direct booking site, the conversation would flow into Cendra's unified inbox. Your AI agent handles the inquiry using the same pipeline as OTA bookings — with the added benefit of zero commission on the resulting reservation.
+| Step | What the AI does |
+|------|-----------------|
+| **Availability check** | AI queries your PMS calendar in real time to confirm the property is available |
+| **Pricing** | AI calculates the total cost including nightly rate, fees, taxes, and discounts |
+| **Payment collection** | AI generates a Stripe payment link and sends it to the guest |
+| **Booking confirmation** | Once paid, AI confirms the reservation with the guest |
+| **PMS sync** | AI creates the reservation in your PMS and blocks the calendar |
+| **Double booking prevention** | Calendar is updated immediately — no other guest can book the same dates |
+| **Check-in instructions** | AI automatically sends check-in details as the arrival date approaches |
 
-Cendra's AI could also suggest your direct booking site to returning guests, encouraging them to book directly next time.
+## Why This Matters
+
+| Booking method | Commission | Speed | Effort |
+|---------------|-----------|-------|--------|
+| Airbnb | 3-15% | Minutes | Guest self-service |
+| Booking.com | 15-20% | Minutes | Guest self-service |
+| Manual direct booking | 0% | Hours | Staff processes manually |
+| **Cendra AI direct booking** | **0%** | **Seconds** | **Fully automated by AI** |
+
+Direct bookings via AI agents combine the **zero commission** of direct bookings with the **instant speed** of OTA bookings — without any manual work from your team.
+
+## PMS Calendar Sync
+
+The critical piece that makes this work: **real-time PMS calendar sync**. When the AI creates a direct booking:
+
+1. The reservation is immediately written to your PMS
+2. Your calendar is blocked for those dates across all channels
+3. OTAs (Airbnb, Booking.com, Vrbo) see the updated availability
+4. No double bookings — the calendar is the single source of truth
+
+## Use Cases
+
+| Scenario | How AI handles it |
+|----------|------------------|
+| Returning guest messages on WhatsApp | AI recognizes them, offers loyalty discount, processes booking |
+| Instagram follower asks about availability | AI checks dates, sends price, creates payment link in DM |
+| Facebook inquiry about group booking | AI calculates multi-room pricing, sends payment link |
+| Guest wants to extend their stay | AI checks availability, calculates additional cost, processes payment |
+| Last-minute booking request | AI offers available properties, processes instant booking |
 
 ## Vote on This Feature
 
-Want direct booking in Cendra? Let us know — your input directly shapes our roadmap.
+Want direct booking via AI agents? Your input shapes our roadmap.
 
 <Card title="Vote for Direct Booking" icon="thumbs-up" href="https://botel-ai.nolt.io/">
   Help us prioritize by voting on our feature board.
