@@ -1,0 +1,108 @@
+---
+title: "Privacy & Security"
+sidebarTitle: "Privacy & Security"
+description: "Cendra is built with data privacy and security at its core. Guest data is encrypted, access is role-controlled, and AI agents only use information you explicitly provide in the knowledge base. GDPR-ready architecture."
+---
+
+Cendra is built with data privacy and security at its core. Guest data is encrypted in transit and at rest, access is controlled through role-based permissions, and AI agents only use information you explicitly provide — Cendra never trains on your guest data.
+
+## Data Privacy Principles
+
+| Principle | How Cendra implements it |
+|-----------|-------------------------|
+| **Data minimization** | Cendra only syncs data needed for guest communication — no unnecessary data collection |
+| **Purpose limitation** | Guest data is used exclusively for communication and property management — never sold or shared |
+| **No AI training on your data** | Cendra's AI does not use your guest conversations or property data to train models |
+| **Data isolation** | Each workspace is fully isolated — no data leaks between workspaces or customers |
+| **Right to deletion** | Guest data can be deleted on request in compliance with privacy regulations |
+
+## Security Architecture
+
+### Encryption
+- **In transit** — all data is encrypted using TLS 1.2+ between your browser, Cendra's servers, and third-party integrations
+- **At rest** — guest data and property information are encrypted at rest in Cendra's database
+- **API keys** — PMS credentials and API keys are stored in Azure Key Vault, encrypted and access-controlled
+
+### Authentication
+- **Auth0** — Cendra uses Auth0 for authentication, supporting email/password, Google OAuth, and Microsoft OAuth
+- **Multi-factor authentication** — available through Auth0 for additional account security
+- **Organization isolation** — each workspace is tied to an Auth0 organization, ensuring complete tenant separation
+
+### Access Control
+- **Role-based permissions (RBAC)** — 14 resources with 4 action types (view, edit, create, delete) per role. [Learn more →](/workspace/roles-permissions)
+- **Property-level access** — restrict team members to specific properties
+- **Audit trail** — track who accessed what and when
+
+### Infrastructure
+- **Cloud hosting** — Cendra runs on Microsoft Azure with enterprise-grade infrastructure
+- **Kubernetes (AKS)** — containerized microservices with automatic scaling and health monitoring
+- **Separate environments** — development, pre-production, and production environments are fully isolated
+- **Automated backups** — database backups with point-in-time recovery
+
+## AI Safety
+
+### How Cendra's AI Handles Guest Data
+
+Cendra's AI agents are designed with safety guardrails:
+
+- **Grounded responses only** — AI responses are based exclusively on your knowledge base and PMS data. Cendra does not hallucinate or invent information.
+- **No data retention by AI models** — guest conversations sent to AI models for response generation are not stored or used for training
+- **Configurable guardrails** — define what the AI can and cannot discuss using [AI Rules](/ai-agents/ai-rules)
+- **Human oversight** — all AI responses can be reviewed before sending in semi-automated mode
+- **Escalation rules** — sensitive topics automatically route to human team members
+
+### What the AI Can and Cannot Access
+
+| Data | AI access |
+|------|-----------|
+| Property knowledge base | Yes — this is what the AI uses to answer questions |
+| Guest reservation details | Yes — check-in dates, property, guest name (for personalization) |
+| Guest payment information | No — AI never sees or handles payment card data |
+| Internal team messages | No — AI only sees guest-facing conversations |
+| Other workspace data | No — AI is isolated per workspace |
+
+## GDPR Readiness
+
+Cendra's architecture supports GDPR compliance:
+
+| GDPR requirement | Cendra support |
+|-----------------|----------------|
+| **Lawful basis for processing** | Data processed for legitimate interest (fulfilling guest communication) and consent |
+| **Right of access** | Guest data accessible through contact management |
+| **Right to erasure** | Guest data can be deleted on request |
+| **Data portability** | Contact data exportable from Cendra |
+| **Data processing agreements** | Available for enterprise customers |
+| **Data breach notification** | Incident response procedures in place |
+| **Privacy by design** | Workspace isolation, encryption, RBAC built into architecture |
+
+## PMS Data Handling
+
+When Cendra syncs data from your property management system:
+
+- **Sync is read-focused** — Cendra reads property and reservation data from your PMS. It does not modify PMS data unless you configure specific write-back actions.
+- **Credentials secured** — PMS API keys and OAuth tokens are stored in Azure Key Vault, not in application databases
+- **Real-time sync** — data stays current without manual exports or batch imports
+- **No data duplication** — Cendra references your PMS as the source of truth
+
+## Communication Channel Security
+
+| Channel | Security measures |
+|---------|------------------|
+| **WhatsApp Business** | End-to-end encryption (WhatsApp native), official Business API |
+| **Gmail** | OAuth 2.0 authentication, Google Pub/Sub for real-time notifications |
+| **Outlook** | OAuth 2.0 authentication, Microsoft Graph API with subscription-based notifications |
+
+Cendra never stores email or WhatsApp passwords. All channel connections use OAuth tokens that can be revoked at any time.
+
+## Smart Lock Security
+
+For properties using [smart lock integrations](/smart-locks/overview):
+
+- **Temporary access codes** — guest codes are time-bound to reservation dates
+- **Automatic revocation** — codes are removed at checkout
+- **Seam platform** — device communication goes through Seam's verified webhook system with Svix signature verification
+- **No master codes exposed** — Cendra manages individual guest codes, not property master codes
+
+## Reporting Security Concerns
+
+If you discover a security vulnerability or have concerns about data handling, contact us at [security@cendra.ai](mailto:security@cendra.ai).

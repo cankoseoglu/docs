@@ -113,6 +113,12 @@
               "workspace/roles-permissions",
               "workspace/billing"
             ]
+          },
+          {
+            "group": "Privacy & Security",
+            "pages": [
+              "privacy/data-privacy"
+            ]
           }
         ]
       },
