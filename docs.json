@@ -97,7 +97,8 @@
           {
             "group": "Dashboard & Analytics",
             "pages": [
-              "dashboard/overview"
+              "dashboard/overview",
+              "dashboard/issues-task-management"
             ]
           },
           {
