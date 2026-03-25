@@ -60,6 +60,7 @@
               "ai-agents/labels",
               "ai-agents/knowledge-base",
               "ai-agents/knowledge-candidates",
+              "ai-agents/multi-language",
               "ai-agents/sandbox"
             ]
           },
