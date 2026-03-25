@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Cendra",
   "colors": {
-    "primary": "#18E299",
-    "light": "#18E299",
-    "dark": "#0C8C5E"
+    "primary": "#0F172A",
+    "light": "#1E3A5F",
+    "dark": "#0F172A"
   },
   "favicon": "/favicon.svg",
   "logo": {
