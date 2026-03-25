@@ -18,6 +18,16 @@ Navigate to [Agent Hub → Knowledge Base](https://app.cendra.ai/knowledgebase) 
   <img src="/images/07-knowledge-base.png" />
 </Frame>
 
+## Conversation History Import
+
+When you connect your PMS, Cendra imports up to **6 months of past guest conversations**. This gives the AI immediate context about how your team communicates, what questions guests commonly ask, and how your properties handle different scenarios.
+
+This imported conversation history serves two purposes:
+- **AI learning** — the AI understands your team's communication style and common responses from day one
+- **MIRA discovery** — [MIRA](/ai-agents/knowledge-candidates) scans these past conversations to identify knowledge gaps and suggest answers that were already provided manually but never added to the knowledge base
+
+This means Cendra doesn't start from zero — it learns from your existing operations before you even send your first AI-powered response.
+
 ## Types of Knowledge
 
 | Category | Examples | Source |
@@ -29,6 +39,45 @@ Navigate to [Agent Hub → Knowledge Base](https://app.cendra.ai/knowledgebase) 
 | **Emergency contacts** | Maintenance, property manager phone, local emergency numbers | Manual entry |
 | **FAQs** | Common questions and your preferred answers | Manual entry |
 | **Custom procedures** | How to handle early check-in requests, lost keys, complaints | Manual entry |
+
+## Data Hierarchy — How the AI Decides What to Say
+
+When a guest sends a message, Cendra's AI assembles context from multiple sources in a specific priority order. Higher-priority sources override lower ones when there's a conflict.
+
+### Priority Order (Highest to Lowest)
+
+| Priority | Source | Description |
+|----------|--------|-------------|
+| **1. Business Flags** | Classifier Agent | Cendra first classifies the message: is it an emergency? A complaint? An availability question? An upsell opportunity? These flags determine which tools and knowledge sources the AI uses. |
+| **2. AI Rules & Guardrails** | Your configured rules | Custom rules and default safety guardrails are checked before any response is generated. A rule saying "never discuss refunds" overrides any knowledge base content about refund policies. |
+| **3. Conversation History** | Past messages in this thread | The AI reads the full conversation thread to maintain context. It knows what was already discussed and avoids repeating itself. |
+| **4. Property Documents** | Uploaded files & custom knowledge | Documents you've uploaded (PDFs, house manuals, local guides) — highest trust knowledge because you explicitly provided it. |
+| **5. PMS Knowledge** | Auto-synced from your PMS | Property details, amenities, booking rules, and descriptions extracted from your PMS — medium trust, system-extracted. |
+| **6. System Knowledge** | Cendra platform defaults | General hospitality knowledge and platform guidelines — lowest trust, used as fallback only. |
+| **7. Web Search** | Real-time internet search | If enabled, the AI can search for weather, local recommendations, directions, and events — used when the knowledge base doesn't have the answer. |
+
+### How the Classifier Works
+
+Before generating a response, Cendra's **Classifier Agent** analyzes the guest's message and sets business flags:
+
+| Flag | What it means | AI behavior |
+|------|--------------|-------------|
+| **Emergency** | Life-threatening situation | Escalates immediately with emergency contact information |
+| **Property-related** | Question about the property or amenities | Searches property knowledge base |
+| **Availability-related** | Booking or date inquiry | Checks calendar availability via PMS |
+| **Reservation-related** | Question about an existing booking | References reservation details |
+| **Complaint** | Guest expressing dissatisfaction | Applies complaint handling rules, may escalate |
+| **Upsell opportunity** | Guest interest in extras | Offers relevant upsell if configured |
+
+These flags determine which tools the AI activates — the classifier decision effectively overrides generic conversation context when specific patterns are detected. This ensures emergencies are always handled as emergencies, regardless of what the knowledge base says.
+
+### Why This Matters
+
+The data hierarchy ensures that:
+- **Safety first** — guardrails and escalation rules always take priority
+- **Your knowledge wins** — property documents you uploaded override auto-synced PMS data
+- **Context is maintained** — conversation history prevents the AI from losing track of what was discussed
+- **Fallbacks exist** — if the knowledge base doesn't have an answer, web search provides a safety net
 
 ## Per-Property Knowledge
 
