@@ -1,0 +1,144 @@
+---
+title: "Cendra vs Hostaway ReplyAI"
+sidebarTitle: "Cendra vs Hostaway ReplyAI"
+description: "Comparison of Cendra and Hostaway ReplyAI for short-term rental operators on Hostaway. Covers bundled PMS AI vs specialized multi-agent platform, automation depth, operations orchestration, and how Cendra layers on top of Hostaway."
+---
+
+## Quick answer
+
+Cendra and Hostaway ReplyAI are not mutually exclusive. Hostaway ReplyAI is the AI reply-assist feature bundled into Hostaway's PMS — good for drafting messages based on listing data with human approval before sending. Cendra is a specialized AI operations platform that layers on top of Hostaway via the official marketplace, running Guest, Sales, and Operations agents at 70–80% autopilot automation.
+
+If you're on Hostaway and ReplyAI's draft-and-approve workflow meets your needs, you don't necessarily need anything else. But if you want **full autopilot automation**, an **Operations Agent** that handles maintenance and vendor coordination, **outcome-based pricing**, and **specialized multi-agent reasoning** — Cendra is designed to stack on top of Hostaway, not replace it.
+
+The right mental model: Hostaway runs your reservations and channels. ReplyAI drafts messages. Cendra runs autonomously on top of both.
+
+## At a glance
+
+| | Cendra (on Hostaway) | Hostaway ReplyAI alone |
+|---|---|---|
+| **Role** | AI agent platform layered on Hostaway via marketplace | Built-in PMS reply assist |
+| **AI architecture** | Multi-agent — Guest, Sales, Operations | Single reply-assist feature |
+| **Autopilot mode** | Yes, per-property per-agent | Drafts require approval (copilot by default) |
+| **Typical automation coverage** | 40% day 1 → 70–80% after training | Depends on operator approval rate |
+| **Operations Agent** | Yes — task creation, vendor dispatch, follow-through | Not included |
+| **Upsells** | Built-in Sales Agent with late checkout, early check-in, gap night workflows | Not a core feature — handled via scheduled messages |
+| **Knowledge base** | Per-property structured KB with [knowledge candidates](/ai-agents/knowledge-candidates) | Based on listing data + custom rules |
+| **Multi-channel inbox** | WhatsApp, Gmail, Outlook, Airbnb, Booking.com, Vrbo unified | Hostaway inbox (multi-channel) |
+| **Pricing model** | Outcome-based — scales with your automation rate | Included in Hostaway subscription |
+| **Setup** | Under 30 minutes via Hostaway marketplace | Enabled in Hostaway settings |
+| **Best for** | Operators who want 70%+ automation + ops orchestration | Operators wanting draft assistance and comfortable with manual approval |
+
+## Why Cendra layers on Hostaway (not replaces it)
+
+Cendra is available in the Hostaway marketplace. Connecting is a single-click — Cendra reads your reservations, messages, properties, and channel data via Hostaway's API and runs its AI agents on top. You keep everything Hostaway is good at (channel management, reservations, calendar sync, payments). You add what Cendra is good at (autopilot AI across messaging, upsells, and operations).
+
+## Where Cendra wins
+
+### Real autopilot, not copilot
+
+Hostaway ReplyAI drafts responses that require your approval before sending. For low-volume operators, that's fine. For operators with 20+ properties, approving every draft becomes its own bottleneck — you're faster than typing, but still the bottleneck.
+
+Cendra lets you flip the AI to autopilot mode per property and per agent. Guest Agent can be on autopilot for Property A while staying in copilot mode for Property B. See [AI rules](/ai-agents/ai-rules) and [escalations](/ai-agents/escalations). Most Cendra operators move to full autopilot on routine queries within 30–60 days.
+
+### Higher automation ceiling
+
+Hostaway ReplyAI is context-aware thanks to the PMS integration — it pulls reservation and listing data for each draft. But it's a single AI reply-assist feature, not a multi-agent system. Automation coverage is a function of how many drafts you approve without edits.
+
+Cendra targets 70–80% automation within 90 days because it runs three specialized agents coordinating across messaging, upsells, and ops — each optimized for its own task. Coverage isn't "drafts you approve" — it's "messages handled end-to-end without you."
+
+### Operations Agent
+
+When a Hostaway guest messages "the WiFi is down," ReplyAI drafts a reply about the WiFi. Cendra's Operations Agent:
+
+1. Reads the signal
+2. Opens a task in Cendra with the property and reservation
+3. Routes to the responsible maintenance contact
+4. Follows up until resolved
+5. Updates the guest automatically when fixed
+
+See [issues and task management](/dashboard/issues-task-management). Hostaway has tasks, but they're manually created. Cendra's Operations Agent is autonomous.
+
+### Specialized Sales Agent for upsells
+
+Hostaway supports scheduled messages for upsells (e.g. pre-arrival emails about late checkout). Cendra's Sales Agent goes further — context-aware upsell offers at the right moment in the conversation, with configurable pricing rules per property. See [upsell management](/revenue/upsell-management).
+
+### Per-property knowledge that gets deeper over time
+
+Cendra surfaces [knowledge candidates](/ai-agents/knowledge-candidates) — questions the AI encountered and couldn't answer confidently. Fill the gap once, Cendra remembers forever. Over 90 days your knowledge base deepens automatically. Hostaway ReplyAI relies on what you configured up-front plus listing data.
+
+## Where Hostaway ReplyAI wins
+
+- **Already included in Hostaway subscription**. If you're on Hostaway and ReplyAI's draft-assist is enough for your workflow, you don't have additional spend.
+- **Single vendor relationship**. One PMS, one AI, one invoice. Operationally simpler if draft assistance is all you need.
+- **Low message volume**. If you're a small portfolio where approving drafts isn't a bottleneck, the simpler model works.
+- **Trust the PMS data layer**. ReplyAI runs on Hostaway's native data with no additional integration risk.
+
+## Feature-level deep dive
+
+### Guest communication
+
+Hostaway ReplyAI drafts responses using listing data, reservation details, and custom rules. Requires human approval before sending. Cendra's Guest Agent reasons over the same data plus its own [structured knowledge base](/ai-agents/knowledge-base), handles multi-turn conversations, and runs on autopilot where configured.
+
+### Upsells
+
+Hostaway handles upsells via scheduled messages. Cendra's Sales Agent offers upsells conversationally at the right moment with pricing rules configurable per property. See [upsell management](/revenue/upsell-management).
+
+### Operations
+
+Hostaway's task module exists but is manually driven. Cendra's Operations Agent opens tasks autonomously from guest messages and routes them. See [how agents work](/ai-agents/how-agents-work).
+
+### Channels and inbox
+
+Hostaway ships a strong multi-channel inbox natively. Cendra mirrors this into its own [unified inbox](/inbox/unified-inbox) so operators can work from either — some prefer Hostaway's inbox with Cendra AI running in the background; others prefer Cendra's inbox with agent suggestions inline.
+
+### Sandbox
+
+Cendra includes a [sandbox](/ai-agents/sandbox) for testing AI behavior on real conversations before going live. Hostaway ReplyAI testing is done in the live inbox.
+
+## Ideal customer for each
+
+**Pick Cendra on top of Hostaway if:**
+
+- You're running 20+ properties and message volume is high
+- You want real autopilot, not draft-and-approve
+- Ops orchestration (maintenance, vendor dispatch) is part of your workflow
+- You want outcome-based pricing
+- You want upsells baked into conversational AI, not just scheduled messages
+
+**Stick with Hostaway ReplyAI alone if:**
+
+- You're under 15 properties and draft-and-approve is fast enough
+- You don't want to add a second vendor relationship
+- Your ops don't require autonomous task orchestration
+- Your message volume is low enough that approval overhead is acceptable
+
+## FAQs
+
+### Can I use Cendra if I'm on Hostaway?
+Yes — Cendra is in the Hostaway marketplace. Connect with a single API key and Cendra starts running AI agents on top of your Hostaway reservations and messages. [Connect your PMS](/getting-started/connect-pms).
+
+### Do I need to turn off ReplyAI to use Cendra?
+Most operators do, to avoid duplicate draft generation. Cendra handles the full message automation layer once connected.
+
+### Does Cendra replace Hostaway?
+No. Hostaway remains your PMS, channel manager, and reservation system. Cendra is the AI layer on top.
+
+### How is Cendra's pricing compared to Hostaway ReplyAI?
+ReplyAI is included in Hostaway's subscription. Cendra's pricing is outcome-based — you pay as your automation rate rises. At low volume the extra cost is minimal; at high volume the savings from autopilot replace multiple headcount worth of message handling.
+
+### Can I run Cendra only on some of my Hostaway properties?
+Yes. Cendra supports per-property configuration, so you can enable agents on specific properties while leaving others on Hostaway-only messaging. Great for phased rollout.
+
+### What automation rate should I expect?
+Most Cendra + Hostaway workspaces start at ~40% on day 1 and rise to 70–80% within 90 days as the AI learns your properties and preferences.
+
+### How long does setup take?
+Under 30 minutes. Install from the Hostaway marketplace, connect, configure your [knowledge base](/ai-agents/knowledge-base), and start in sandbox mode. [Start your free trial](https://app.cendra.ai).
+
+## Next step
+
+<Card title="Try Cendra on top of Hostaway — 1 week free" icon="rocket" href="https://app.cendra.ai">
+  Install from the Hostaway marketplace, connect in one click, and see how multi-agent AI changes your message stream. No credit card required.
+</Card>
+
+_Last updated 2026-04-16. Competitor information is based on publicly available sources as of this date. Product features change — verify with Hostaway for current details._

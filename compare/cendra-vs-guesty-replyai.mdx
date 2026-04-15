@@ -1,0 +1,151 @@
+---
+title: "Cendra vs Guesty ReplyAI"
+sidebarTitle: "Cendra vs Guesty ReplyAI"
+description: "Comparison of Cendra and Guesty ReplyAI for short-term rental operators on Guesty. Covers bundled PMS AI vs specialized multi-agent platform, autopilot vs draft-assist, operations orchestration, and how Cendra layers on top of Guesty."
+---
+
+## Quick answer
+
+Cendra and Guesty ReplyAI are complementary, not competitive. Guesty ReplyAI is the draft-assist AI bundled into Guesty's PMS — since launch, ~40% of Guesty accounts use it and high-usage accounts have it drafting up to 50% of outgoing messages (which still require human send). Cendra is a specialized AI operations platform installed from the Guesty marketplace that runs Guest, Sales, and Operations agents at 70–80% full autopilot.
+
+If you're on Guesty and ReplyAI's draft-and-send workflow is enough, you're set. But if you want **real autopilot** (not drafts), an **Operations Agent** that handles ops end-to-end, **outcome-based pricing** aligned to actual automation, and **specialized multi-agent reasoning** — Cendra layers on top of Guesty without replacing it.
+
+The mental model: Guesty runs your bookings, channels, and operations. ReplyAI drafts replies. Cendra runs autonomously on top of both.
+
+## At a glance
+
+| | Cendra (on Guesty) | Guesty ReplyAI alone |
+|---|---|---|
+| **Role** | AI agent platform in the Guesty marketplace | Built-in PMS reply assist |
+| **AI architecture** | Multi-agent — Guest, Sales, Operations | Single reply-drafting feature |
+| **Autopilot mode** | Yes, per-property per-agent | Drafts — human still sends |
+| **Typical automation coverage** | 40% day 1 → 70–80% after training | ~20% of message share at high-usage accounts (drafts) |
+| **Operations Agent** | Yes — task creation, vendor dispatch, follow-through | Not included |
+| **Upsells** | Built-in Sales Agent with late checkout, early check-in, gap night, custom offers | Via scheduled messages / automations |
+| **Knowledge base** | Per-property structured KB with [knowledge candidates](/ai-agents/knowledge-candidates) | Listing data + PMS context |
+| **Multi-channel inbox** | WhatsApp, Gmail, Outlook, Airbnb, Booking.com, Vrbo unified | Guesty Unified Inbox |
+| **Languages** | 90+ with auto-detection | 12+ including English, Spanish, French, German, Chinese, Italian, Portuguese |
+| **Pricing** | Outcome-based — scales with automation rate | Included in Guesty subscription |
+| **Setup** | Under 30 minutes via Guesty marketplace | Enabled in Guesty settings |
+| **Best for** | Operators who want real 70%+ autopilot + ops orchestration | Operators wanting draft assistance + native PMS integration |
+
+## Why Cendra layers on top of Guesty
+
+Cendra is available in Guesty's official marketplace. Install with one click, connect with a single API key, and Cendra starts running its AI agents on top of Guesty's reservations, listings, and message streams. Guesty handles what Guesty is best at (channel management, bookings, revenue, accounting). Cendra handles autopilot AI across messaging, upsells, and operations.
+
+## Where Cendra wins
+
+### Real autopilot, not "draft + I still have to click send"
+
+Per Guesty's own launch announcement, ReplyAI has been adopted by over 40% of accounts who use it to save writing ~20% of messages sent. High-usage accounts have it drafting 50%. Those are drafts — a human still sends.
+
+For mid-market and enterprise operators with thousands of messages per week, that human-in-the-loop bottleneck limits the real-world automation gain. Cendra targets 70–80% full autopilot — messages handled end-to-end without operator involvement — within 90 days. See [AI rules](/ai-agents/ai-rules) for per-property autopilot configuration.
+
+### Three specialized agents, not one draft-writer
+
+Guesty ReplyAI is a single generative feature. Cendra runs:
+
+- **Guest Agent** — 24/7 guest communication across WhatsApp, email, and OTA channels
+- **Sales Agent** — pre-built upsell workflows for late checkout, early check-in, gap nights, custom offers
+- **Operations Agent** — task creation, vendor routing, maintenance follow-through
+
+See [how agents work](/ai-agents/how-agents-work). The multi-agent split covers workflow breadth that a single draft-writer can't.
+
+### Operations Agent runs the ops loop
+
+Guesty has tasks and automations. But when a guest messages "the dishwasher is leaking," ReplyAI drafts a reply — it doesn't open a maintenance task, route it to the right vendor, track the fix, and notify the guest when done. Cendra's Operations Agent does all of that autonomously. See [issues and task management](/dashboard/issues-task-management).
+
+### Deeper knowledge base with automatic gap-surfacing
+
+ReplyAI references listing data and PMS context. Cendra builds a structured [per-property knowledge base](/ai-agents/knowledge-base) with house rules, amenities, access codes, local recommendations, and vendor contacts. When the AI encounters a question it can't answer, it surfaces a [knowledge candidate](/ai-agents/knowledge-candidates) for you to answer once — then remembers forever.
+
+Over 90 days of operation, your knowledge base depth is the reason Cendra's automation rate keeps climbing while draft-only tools plateau.
+
+### 90+ languages vs 12+
+
+Cendra supports [90+ languages](/ai-agents/multi-language) with auto-detection and per-agent configuration. Guesty ReplyAI explicitly lists 12+ including English, Spanish, French, German, Chinese, Italian, and Portuguese. For portfolios with international guest mix, the language gap matters.
+
+### Outcome-based pricing
+
+Cendra's pricing scales with your actual automation rate. ReplyAI is included in Guesty subscription, so there's no direct cost to ReplyAI — but the cost of *still handling 80% of your messages manually* is the unmeasured bill.
+
+## Where Guesty ReplyAI wins
+
+- **No additional vendor relationship**. Included in your Guesty subscription. If ReplyAI's draft-assist is sufficient for your workflow, you have zero additional setup or spend.
+- **Native PMS context**. Built directly on Guesty's data layer. No integration risk, no sync lag.
+- **Low message volume workflows**. For small portfolios where draft-approve is fast enough, ReplyAI's simpler model works fine.
+- **Conservative AI adoption curve**. Some teams prefer "AI suggests, human sends" as a permanent posture, not a ramp step. ReplyAI fits that philosophy.
+
+## Feature-level deep dive
+
+### Guest communication
+
+ReplyAI drafts responses in the tone of past messages, context from Guesty reservation data, and custom rules. Human approves and sends. Cendra's Guest Agent operates on the same signals plus its own structured knowledge base, handles multi-turn reasoning, and runs on autopilot where configured.
+
+### Upsells
+
+Guesty supports upsell flows via scheduled messages and automations. Cendra's Sales Agent offers upsells conversationally at the right moment with configurable per-property pricing rules — see [upsell management](/revenue/upsell-management).
+
+### Operations
+
+Guesty has tasks, workflows, and automations. Cendra's Operations Agent is autonomous — it opens tasks from message signals, routes them, and closes the loop without operator involvement. See [issues and task management](/dashboard/issues-task-management).
+
+### Translation and multi-language
+
+Both support multi-language guest interactions. Cendra handles 90+ languages with auto-detection. Guesty ReplyAI has 12+ per official launch materials.
+
+### Sandbox
+
+Cendra includes a [sandbox](/ai-agents/sandbox) for testing AI behavior on real conversations before flipping to autopilot. Guesty ReplyAI testing happens live.
+
+## Ideal customer for each
+
+**Pick Cendra on top of Guesty if:**
+
+- You're running 20+ properties and message volume is high
+- You want real autopilot — end-to-end handling without human approval
+- Operations orchestration (maintenance, vendor dispatch, task follow-through) is a daily need
+- You want outcome-based pricing aligned to actual automation achieved
+- You have international guests where 90+ language support matters
+- You want upsells baked into conversational AI, not scheduled messages
+
+**Stick with Guesty ReplyAI alone if:**
+
+- You're under 15 properties and draft-and-approve is fast enough for your volume
+- You don't want to add another vendor
+- Your ops workflows don't require autonomous task orchestration
+- 12+ languages covers your guest base
+
+## FAQs
+
+### Is Cendra in the Guesty marketplace?
+Yes. Cendra is available in Guesty's official marketplace. Install with one click and connect with a single API key. [Connect your PMS](/getting-started/connect-pms).
+
+### Do I need to turn off ReplyAI to use Cendra?
+Most operators turn off ReplyAI when switching to Cendra autopilot, to avoid conflicting draft generation. Cendra handles the full AI messaging layer once connected.
+
+### Does Cendra replace Guesty?
+No. Guesty remains your PMS, channel manager, and reservation system. Cendra is the specialized AI layer on top.
+
+### What's the difference between ReplyAI drafting and Cendra autopilot?
+ReplyAI writes a draft. A human reviews, edits if needed, and sends. Cendra autopilot mode sends automatically when confidence is high, escalating to a human only on edge cases or low-confidence queries. At scale, the difference is hours per day of operator time.
+
+### What automation rate should I expect on Guesty + Cendra?
+Most workspaces start at ~40% on day 1 and rise to 70–80% within 90 days. This is full autopilot automation — messages handled end-to-end, not drafts approved.
+
+### Can I run Cendra on only some of my Guesty properties?
+Yes. Cendra supports per-property configuration for a phased rollout. Start on one property, validate, expand.
+
+### What languages does Cendra support compared to ReplyAI?
+Cendra supports 90+ languages with auto-detection. ReplyAI supports 12+ per Guesty's public materials. For operators with multilingual guest mixes, this is a meaningful gap.
+
+### How long does setup take?
+Under 30 minutes from Guesty marketplace install to sandbox testing. [Start your free trial](https://app.cendra.ai).
+
+## Next step
+
+<Card title="Try Cendra on top of Guesty — 1 week free" icon="rocket" href="https://app.cendra.ai">
+  Install from the Guesty marketplace, connect in one click, and see real autopilot. No credit card required.
+</Card>
+
+_Last updated 2026-04-16. Competitor information is based on publicly available sources as of this date. Product features change — verify with Guesty for current details._

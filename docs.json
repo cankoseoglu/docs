@@ -196,7 +196,14 @@
           {
             "group": "Competitor Comparisons",
             "pages": [
-              "compare/cendra-vs-conduit"
+              "compare/cendra-vs-conduit",
+              "compare/cendra-vs-besty",
+              "compare/cendra-vs-hostbuddy",
+              "compare/cendra-vs-aeve",
+              "compare/cendra-vs-enso",
+              "compare/cendra-vs-hostaway-replyai",
+              "compare/cendra-vs-guesty-replyai",
+              "compare/cendra-vs-hospitable"
             ]
           }
         ]
