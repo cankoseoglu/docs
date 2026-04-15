@@ -194,23 +194,29 @@
         "tab": "Compare",
         "groups": [
           {
-            "group": "Competitor Comparisons",
+            "group": "Best AI Tools",
+            "pages": [
+              "compare/best-ai-for-str-2026"
+            ]
+          },
+          {
+            "group": "Head-to-Head Comparisons",
             "pages": [
               "compare/cendra-vs-conduit",
-              "compare/cendra-vs-besty",
-              "compare/cendra-vs-hostbuddy",
-              "compare/cendra-vs-aeve",
-              "compare/cendra-vs-enso",
               "compare/cendra-vs-hostaway-replyai",
               "compare/cendra-vs-guesty-replyai",
               "compare/cendra-vs-hospitable",
-              "compare/cendra-vs-duve",
-              "compare/cendra-vs-hijiffy",
-              "compare/cendra-vs-smoobu",
+              "compare/cendra-vs-besty",
+              "compare/cendra-vs-hostbuddy",
+              "compare/cendra-vs-enso",
+              "compare/cendra-vs-aeve",
               "compare/cendra-vs-nowistay",
-              "compare/cendra-vs-operto",
+              "compare/cendra-vs-duve",
+              "compare/cendra-vs-smoobu",
               "compare/cendra-vs-jurny",
               "compare/cendra-vs-boom",
+              "compare/cendra-vs-hijiffy",
+              "compare/cendra-vs-operto",
               "compare/cendra-vs-breezeway"
             ]
           }
