@@ -1,0 +1,136 @@
+---
+title: "Cendra vs Smoobu"
+sidebarTitle: "Cendra vs Smoobu"
+description: "Comparison of Cendra and Smoobu for short-term rental operators. Covers specialized AI operations platform vs full PMS + BYOL Gemini/ChatGPT approach, multi-agent architecture, and when each fits."
+---
+
+## Quick answer
+
+Cendra and Smoobu are different categories of product. Smoobu is a full short-term rental PMS — channel manager, website builder, unified calendar, invoicing — with a "smart stack" positioning that pairs Smoobu with Google Gemini or ChatGPT as the AI layer (bring-your-own-LLM). Cendra is a specialized AI operations platform purpose-built for STR that layers on top of 45+ PMS — including Smoobu — with three specialized agents running at 70–80% autopilot.
+
+Choose **Smoobu** if you want an affordable all-in-one PMS for a small-to-mid portfolio and are comfortable using Gemini or ChatGPT as your AI layer manually. Choose **Cendra** if you want production-grade AI automation that runs your guest communication, upsells, and operations end-to-end without you prompting an LLM yourself — on whatever PMS you already have.
+
+## At a glance
+
+| | Cendra | Smoobu |
+|---|---|---|
+| **Product category** | Specialized AI operations platform | Full PMS + channel manager + website builder |
+| **AI approach** | Purpose-built multi-agent system with structured knowledge | BYO LLM (Smoobu + Gemini or ChatGPT, manual) |
+| **AI architecture** | Guest, Sales, Operations agents | Smoobu data + external LLM prompting |
+| **Autopilot** | Yes, per-property per-agent | Requires operator to prompt LLM manually |
+| **Operations Agent** | Yes — task creation, vendor dispatch, follow-through | PMS task module, not AI-autonomous |
+| **Upsells** | Sales Agent with late checkout, early check-in, gap night workflows | Not native AI-driven upsells |
+| **Channel manager** | Not a PMS — works with 45+ PMS | Native |
+| **Website builder** | Not included | Native |
+| **Pricing model** | Outcome-based — scales with automation rate | Affordable PMS subscription |
+| **Languages** | 90+ with auto-detection | Smoobu data, LLM handles language |
+| **Best for** | Operators wanting production-grade AI automation | Small-mid operators wanting affordable all-in-one PMS |
+
+## How to think about this choice
+
+Smoobu is a PMS. Cendra is not a PMS. If your question is "what PMS should I run?", Smoobu is one answer (among Guesty, Hostaway, Lodgify, Hospitable, etc.). If your question is "once my PMS is running, how do I automate AI at scale?", Cendra is that answer — and Cendra [integrates with Smoobu](/integrations/smoobu) the same way it integrates with 44 other PMS.
+
+This page is for operators deciding between "Smoobu + BYO Gemini/ChatGPT" as the AI strategy vs "Cendra layered on any PMS including Smoobu" as the AI strategy.
+
+## Where Cendra wins
+
+### Production AI vs manual prompting
+
+Smoobu's "smart stack" approach is pragmatic — your PMS holds reservation data, you copy/paste or integrate manually with Gemini or ChatGPT, and the LLM helps you compose responses. It works if you're hands-on and like prompting LLMs yourself.
+
+Cendra is the opposite philosophy: production-grade AI that runs autonomously. You don't prompt anything. The Guest Agent reads incoming messages, pulls reservation and property context, responds on autopilot (or drafts with escalation, configurable). See [how agents work](/ai-agents/how-agents-work).
+
+For operators whose goal is "AI handles this without me," manual BYO-LLM is the wrong abstraction.
+
+### Multi-agent vs single LLM
+
+Smoobu + Gemini is one LLM doing one thing at a time. Cendra runs three specialized agents — Guest, Sales, Operations — coordinating across the operator workflow. Upsells don't collide with maintenance messages. Ops tasks don't get tangled in guest FAQ replies.
+
+### Autonomous Operations Agent
+
+Smoobu has task management in the PMS. Cendra's [Operations Agent](/ai-agents/how-agents-work) opens tasks autonomously from guest message signals, routes them, and closes the loop with the guest when resolved. See [issues and task management](/dashboard/issues-task-management).
+
+### Knowledge base that deepens automatically
+
+Cendra surfaces [knowledge candidates](/ai-agents/knowledge-candidates) — questions the AI encountered and couldn't answer confidently — so operators fill gaps once and the AI remembers forever. The Smoobu + LLM stack requires operators to manually update prompts or context over time.
+
+### Outcome-based pricing
+
+Cendra's price scales with your automation rate. Smoobu is an affordable PMS subscription; if you're adding Gemini or ChatGPT separately you're paying both. Cendra's one price aligns with the value delivered — automation achieved.
+
+## Where Smoobu wins
+
+- **All-in-one PMS value**. Smoobu bundles PMS + channel manager + website builder at a price point that's hard to beat. If you want one cheap vendor, Smoobu is strong.
+- **DIY AI control**. Operators who want to prompt Gemini or ChatGPT themselves — full control over exact prompts — will prefer Smoobu's BYO approach.
+- **Small portfolio budget**. For 1–10 property operators where AI volume is small enough that manual LLM use is fine, the Smoobu + Gemini stack is cost-efficient.
+- **Website builder included**. Smoobu has a native website builder. Cendra doesn't.
+
+## Feature-level deep dive
+
+### Guest communication
+
+Smoobu: PMS-delivered messages via templates + manual LLM prompting outside the system. Cendra: AI agents reply autonomously or draft in copilot mode, using structured per-property [knowledge base](/ai-agents/knowledge-base) for grounded responses.
+
+### Upsells
+
+Smoobu doesn't ship AI-driven upsell workflows natively. Cendra's Sales Agent runs late-checkout, early-check-in, gap-night, and custom upsells with configurable per-property pricing. See [upsell management](/revenue/upsell-management).
+
+### Operations
+
+Smoobu has PMS task management. Cendra's Operations Agent is autonomous — opens and routes tasks from message signals without operator initiation.
+
+### Channels
+
+Smoobu is the channel manager natively. Cendra works through your PMS of choice (Smoobu or any of 44 others) and consolidates into its own [unified inbox](/inbox/unified-inbox).
+
+### Languages
+
+Cendra handles [90+ languages](/ai-agents/multi-language) with auto-detection per agent. Smoobu data is multilingual; LLM language depends on which LLM you BYO.
+
+## Ideal customer for each
+
+**Pick Cendra (on any PMS including Smoobu) if:**
+
+- You want AI that runs automation end-to-end without manual prompting
+- Ops orchestration matters
+- You want specialized multi-agent AI tuned for STR
+- Outcome-based pricing aligned to automation appeals
+- You're running 20+ properties with real message volume
+
+**Pick Smoobu alone if:**
+
+- You want an affordable all-in-one PMS and don't want production AI right now
+- You're comfortable prompting Gemini or ChatGPT yourself for message drafts
+- You're a small operator (1–10 properties) where manual DIY AI is fine
+- Native website builder + channel manager bundle is part of your decision
+
+## FAQs
+
+### Can Cendra work with Smoobu?
+Yes. Cendra integrates with Smoobu via API — see [Smoobu integration](/integrations/smoobu). Keep Smoobu as your PMS and add Cendra as the AI operations layer.
+
+### Should I use Smoobu + Gemini or Cendra?
+If you want to be in control of prompting and just need an occasional AI assist for drafting, Smoobu + Gemini is cheap and flexible. If you want production AI that handles 70–80% of messaging autonomously without you touching prompts, Cendra is the right tool.
+
+### Does Cendra have a PMS like Smoobu?
+No. Cendra is specifically an AI operations platform. We integrate with 45+ PMS so you can choose the one that fits your workflow.
+
+### Which is cheaper?
+Depends on volume. For 5 properties with low message volume, Smoobu's PMS + free Gemini usage is very cheap. For 50+ properties with high automation needs, Cendra's outcome-based pricing ends up cheaper than manual LLM time.
+
+### Does Cendra have a website builder?
+No. If native site building is part of your need, Smoobu (or WordPress + a direct-booking plugin) is the way.
+
+### Can I try Cendra on Smoobu?
+Yes — connect via [Smoobu integration](/integrations/smoobu) and start the 1-week free trial.
+
+### What automation rate should I expect?
+~40% on day 1, rising to 70–80% within 90 days as the AI learns from your corrections.
+
+## Next step
+
+<Card title="Try Cendra on top of Smoobu — 1 week free" icon="rocket" href="https://app.cendra.ai">
+  Keep Smoobu as your PMS, add Cendra as the AI operations layer. Connect in under 30 minutes. No credit card.
+</Card>
+
+_Last updated 2026-04-16. Competitor information is based on publicly available sources as of this date. Product features change — verify with Smoobu for current details._
