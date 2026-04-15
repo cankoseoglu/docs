@@ -1,0 +1,141 @@
+---
+title: "Cendra vs Conduit AI"
+sidebarTitle: "Cendra vs Conduit"
+description: "Comparison of Cendra and Conduit (formerly HostAI) for short-term rental operators. Covers specialization, multi-agent architecture, pricing model, PMS integrations, voice AI, implementation time, and ideal use cases."
+---
+
+## Quick answer
+
+Cendra and Conduit solve related problems but were built for different operators. Choose **Cendra** if you are a short-term rental operator who wants specialized AI agents for guest communication, ops, and upsells — tied to an outcome-based pricing model that only charges as your automation rate rises. Choose **Conduit** if you run enterprise-scale hospitality with dedicated technical resources, need voice AI, and can invest 2+ weeks in custom workflow configuration across multiple industries (Conduit now serves hospitality, financial services, restaurants, and more).
+
+Cendra is operator-founded — our CEO ran a 60-apartment portfolio before building the product — and stays exclusively focused on STR. Conduit started as HostAI in the STR space and rebranded in 2025 to expand horizontally into a generalist conversational AI platform. If you want a partner that will only build features for short-term rentals, Cendra is the safer long-term bet.
+
+## At a glance
+
+| | Cendra | Conduit (formerly HostAI) |
+|---|---|---|
+| **Primary focus** | Short-term rentals only | Generalist (hospitality, finance, restaurants, support) |
+| **Founder background** | Operator-founded (60-apartment STR portfolio) | Tech-founded, YC W24 |
+| **AI architecture** | Multi-agent — separate agents for Guest, Sales, Ops | Single workflow engine, heavy customization |
+| **Pricing model** | Outcome-based — scales with your automation rate | ~$500/mo flat on Growth plan |
+| **Implementation time** | Self-serve via PMS marketplace (Guesty, Hostaway, Lodgify), usually under 30 minutes | 2+ weeks, technical configuration required |
+| **Voice AI** | Not currently (chat + WhatsApp + email focus) | Yes — one of few in the space |
+| **PMS integrations** | 45+ STR PMS natively, including Guesty, Hostaway, Lodgify, Hostfully, Cloudbeds, OwnerRez, Beds24, Hospitable, Uplisting, Smoobu, Mews | STR integrations maintained, now serves non-STR verticals too |
+| **Autopilot mode** | Yes, per-property toggle | Yes, requires workflow configuration |
+| **Typical automation rate** | 40% on day 1 → 70–80% after training | ~55–65% per third-party comparisons |
+| **Free trial** | 1-week free trial, 1 property autopilot | Paid plans only on public pricing |
+| **Best for** | STR operators running 5–500+ units who want specialization | Enterprise hospitality or cross-industry operators with dev resources |
+
+## Where Cendra wins
+
+### Specialization is the moat
+
+Cendra only serves short-term rental operators. Every product decision — from reservation-matching to multi-property knowledge bases to upsell workflows — is made for STR. Conduit started in STR but has deliberately broadened to multiple industries. That shift is public — Cole Rubin, Conduit's co-founder, has said STR "taught us everything" but the company now positions itself as an AI agent platform for any B2C conversation.
+
+What that means for you: when Cendra ships a new feature, it's to solve an operator problem. When Conduit ships, the feature may be designed for a restaurant reservation flow or a financial services use case — and adapted for STR after the fact. Over a 12-month cycle, specialization compounds.
+
+### Multi-agent architecture, not a workflow engine
+
+Cendra splits responsibilities across three specialized agents:
+
+- **Guest Agent** — handles 24/7 guest communication across WhatsApp, email, and OTA messaging
+- **Sales Agent** — proactive and reactive upsells (late check-out, early check-in, gap nights), with configurable pricing
+- **Operations Agent** — end-to-end ops workflows: task creation, vendor dispatch, cleaner coordination
+
+Conduit uses a single customizable workflow engine. That's flexible, but it means you (or a consultant) must configure every workflow from scratch. Cendra gives you pre-built agents with STR-specific reasoning baked in, so the AI knows what "check-in" means without being taught.
+
+### Outcome-based pricing
+
+Cendra's price scales with your **automation rate** — the share of guest messages the AI handles end-to-end without you. Day 1 starts around 40%, climbing to 70–80% after training. You only pay for what the AI actually automates.
+
+Conduit's Growth plan is ~$500/month flat according to public pricing pages referenced by third parties. That works if you're at enterprise scale — it's expensive for mid-market operators ramping up.
+
+For a typical 20-50 property portfolio, Cendra's unit economics tend to be meaningfully better. [See Cendra pricing](/overview/pricing).
+
+### Self-serve setup vs 2-week implementation
+
+Cendra onboards through the native marketplaces of Guesty, Hostaway, and Lodgify. Connect your PMS with a single API key and you're running in under 30 minutes. Conduit implementations typically run 2+ weeks per independent comparisons — workflow configuration, integration work, and custom logic setup take dedicated engineering time.
+
+For operators who aren't ready to commit weeks of technical capacity, Cendra's self-serve path is materially faster to first value.
+
+## Where Conduit wins
+
+We don't think every operator should pick Cendra. Conduit is the better choice when:
+
+- **You need voice AI**. Conduit offers one of the few production-grade voice agents in hospitality. Cendra is chat + WhatsApp + email only today. If your guests routinely call your phone and you want an AI to answer, Conduit has the lead.
+- **You operate across multiple industries**. If Cendra's STR-only focus is a *disadvantage* for you (e.g. you run STRs plus restaurants plus retail), Conduit's horizontal platform may consolidate your tooling.
+- **You have dedicated technical resources**. Conduit's flexibility rewards teams with developers or in-house ops engineers who want to craft highly custom workflows. Cendra's opinionated multi-agent model is faster but less configurable.
+- **Enterprise-scale portfolios (500+ units) with existing customization requirements**. Large operators with existing integrations and custom flows may find Conduit's engine easier to extend.
+
+## Feature-level deep dive
+
+### Guest communication
+
+Both platforms automate guest messaging with LLM-backed responses and escalation to humans on low-confidence queries. The key difference is context:
+
+- Cendra matches every incoming message to a reservation automatically, pulls property-specific house rules and amenities, and references your prior messaging history for tone calibration.
+- Conduit can be configured to do the same, but requires workflow setup per integration.
+
+### Upsells
+
+Cendra's Sales Agent includes pre-built upsell workflows for late checkout, early check-in, gap nights, and custom offers. Pricing rules are configurable per property. Conduit supports upsells but they're typically built as custom workflows.
+
+### Operations orchestration
+
+Cendra's Operations Agent opens tasks automatically when guest messages surface issues ("the shower is leaking"), routes to the responsible team member, and follows up until resolution. Conduit can be configured similarly but again requires upfront workflow setup.
+
+### Knowledge base
+
+Cendra lets you upload house rules, amenities, and local recommendations per property. The AI uses that data for grounded responses and raises a flag when it's missing information. Conduit's knowledge model is configured per-integration.
+
+### Language support
+
+Both support multi-language guest interactions. Cendra handles 90+ languages natively with auto-detection and per-agent configuration. Conduit lists 12+ via Guesty-style reference.
+
+## Ideal customer for each
+
+**Pick Cendra if:**
+
+- You run 5–500 STR units and want specialized AI without a 2-week implementation
+- You prefer to pay only for automation you actually achieve (outcome-based)
+- You want features shipped specifically for STR, not adapted from other industries
+- You're on Guesty, Hostaway, Lodgify, or any of 45+ supported PMS
+- You want an operator-founded partner who understands the 2am cleaner no-show, not just the tech
+
+**Pick Conduit if:**
+
+- You operate enterprise-scale hospitality with 500+ units and dedicated engineering
+- Voice AI is a critical requirement today
+- You run STRs plus other industries and want one vendor
+- You're comfortable with 2+ week implementation and have the internal bandwidth
+
+## FAQs
+
+### Is Conduit the same as HostAI?
+Yes. Conduit was rebranded from HostAI in 2025 when the company broadened beyond short-term rentals. The LinkedIn announcement from Cole Rubin described the evolution as moving from STR-specific messaging into a general AI agent platform for B2C conversation across real estate, finance, restaurants, and more.
+
+### What automation rate can Cendra achieve?
+New Cendra workspaces typically start around 40% on day 1 and rise to 70–80% within 90 days as the AI learns from operator corrections. Automation rate is our north-star metric and determines your pricing — you only pay for automation you actually achieve.
+
+### Does Cendra work with Guesty and Hostaway?
+Yes. Cendra is available in the official marketplaces of Guesty, Hostaway, and Lodgify. You can connect your PMS with a single API key without engineering support. [Connect your PMS](/getting-started/connect-pms).
+
+### Does Conduit still serve short-term rentals?
+Yes — Conduit maintains its STR integrations and customers. However, new feature development is now split across multiple industries. Operators who want a partner exclusively focused on STR may find specialized alternatives better aligned.
+
+### How long does Cendra take to implement?
+Most Cendra workspaces are running in under 30 minutes. Connect your PMS, configure your knowledge base, set your AI rules, and start in sandbox mode. When you're comfortable, flip to autopilot per property.
+
+### What integrations does Cendra support?
+Cendra connects natively to 45+ PMS including Guesty, Hostaway, Lodgify, Hostfully, Cloudbeds, OwnerRez, Beds24, Hospitable, Uplisting, Smoobu, and Mews. Also WhatsApp Business, Gmail, Outlook, and all major OTA message channels. [See the full integration list](/overview/supported-integrations).
+
+### Can I try Cendra before paying?
+Yes. Cendra offers a 1-week free trial focused on one property in autopilot mode. No credit card required. This lets you verify the automation rate on real guest messages before committing.
+
+## Next step
+
+<Card title="Try Cendra for 1 week free" icon="rocket" href="https://app.cendra.ai">
+  Connect your PMS, train the AI on your properties, and watch your automation rate climb. No credit card required for the trial.
+</Card>
+
+_Last updated 2026-04-16. Competitor information is based on publicly available sources as of this date. Product features change — verify with Conduit for current details._
