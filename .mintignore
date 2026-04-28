@@ -5,3 +5,6 @@
 # Draft content
 drafts/
 *.draft.mdx
+
+# Internal design specs and implementation plans (not for publishing)
+superpowers/
